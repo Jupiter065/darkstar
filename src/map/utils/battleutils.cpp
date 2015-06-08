@@ -4457,6 +4457,7 @@ void assistTarget(CCharEntity* PChar, uint16 TargID)
 
 uint8 GetSpellAoEType(CBattleEntity* PCaster, CSpell* PSpell)
 {
+    // TODO: Divine Veil
     if (PSpell->getAOE() == SPELLAOE_RADIAL_ACCE)
         if (PCaster->StatusEffectContainer->HasStatusEffect(EFFECT_ACCESSION))
             return SPELLAOE_RADIAL;
